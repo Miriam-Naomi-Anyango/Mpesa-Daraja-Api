@@ -1,3 +1,3 @@
 <?php
-echo "Daraja API by Miriam Anyango";
+echo "Daraja API by Miriam Anyango - Hello world!!";
 ?>
