@@ -11,7 +11,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, array(
   'Content-Type:application/json',
   'Authorization:Bearer ' . $access_token
 ));
-$data = array(
+$curl_post_data = array(
   'ShortCode' => $BusinessShortCode,
   'ResponseType' => 'Completed',
   'ConfirmationURL' => $confirmationUrl,
