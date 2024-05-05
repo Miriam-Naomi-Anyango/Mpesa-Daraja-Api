@@ -8,6 +8,7 @@ fwrite($log, $stkCallbackResponse);
 fclose($log);
 
 $data = json_decode($stkCallbackResponse);
+var_dump($data);
 
 $MerchantRequestID = $data->Body->stkCallback->MerchantRequestID;
 $CheckoutRequestID = $data->Body->stkCallback->CheckoutRequestID;
@@ -16,6 +17,12 @@ $ResultDesc = $data->Body->stkCallback->ResultDesc;
 $Amount = $data->Body->stkCallback->CallbackMetadata->Item[0]->Value;
 $TransactionId = $data->Body->stkCallback->CallbackMetadata->Item[1]->Value;
 $UserPhoneNumber = $data->Body->stkCallback->CallbackMetadata->Item[4]->Value;
+
+
+// Close the database connection
+// $conn->close();
+
+
 //CHECK IF THE TRASACTION WAS SUCCESSFUL 
 if ($ResultCode == 0) {
   //STORE THE TRANSACTION DETAILS IN THE DATABASE

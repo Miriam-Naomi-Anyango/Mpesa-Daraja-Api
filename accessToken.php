@@ -1,5 +1,5 @@
 <?php
-//YOU MPESA API KEYS
+//MPESA API KEYS
 $consumerKey = "boMnQo63KmGIaDavIOA3liTehyFDL6VMRGGZsyXGLNGwJBp3"; //Fill with your app Consumer Key
 $consumerSecret = "reUyGzyjlbpj6hU0RRk9sBbEGlFbpn4ZIUSz1hNCdk7C7PAihuZsxasGEYnRtole"; //Fill with your app Consumer Secret
 //ACCESS TOKEN URL
